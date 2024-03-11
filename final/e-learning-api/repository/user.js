@@ -1,8 +1,4 @@
-
-const { v4 } = require("uuid");
 const db = require("./dbConnection");
-
-
 
 async function insert(data) {
     try {

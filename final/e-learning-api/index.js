@@ -15,8 +15,5 @@ app.use(cors());
 
 // Mga routes
 app.use("/auth", authRoute);
-app.use("/modules", moduleRoute);
-app.use("/lessons", lessonRoute);
-app.use("/quizes", quizRoute);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
