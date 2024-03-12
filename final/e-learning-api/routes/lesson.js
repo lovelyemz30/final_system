@@ -1,12 +1,13 @@
 const { Router } = require("express");
-const CourseRepo = require("../repository/course");
+const LessonRepo = require("../repository/lesson");
+
 
 const router = Router();
 
 router.get("/", async (req, res) => {
-    const teacherId = req.query.teacherId;
+    const courseId = req.query.courseId;
 
-    const result = await CourseRepo.findByTeacherId(teacherId);
+    const result = await LessonRepo.findByCourseId(courseId);
 
     return res.status(200).json({
         message: "Ok",

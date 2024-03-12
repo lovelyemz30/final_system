@@ -1,6 +1,6 @@
 const db = require("./dbConnection");
 
-const TABLE_NAME = "tbl_course";
+const TABLE_NAME = "tbl_courses";
 
 async function insert(data) {
     try {
